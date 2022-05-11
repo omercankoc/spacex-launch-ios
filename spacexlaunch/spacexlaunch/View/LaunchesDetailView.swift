@@ -6,13 +6,25 @@ struct LaunchesDetailView: View {
     @ObservedObject var viewModel : LaunchesDetailViewModel = LaunchesDetailViewModel()
     
     var body: some View {
-        VStack(alignment: .center, spacing: 16){
+        VStack{
             KFImage(URL(string: self.viewModel.presenter?.image ?? ""))
                 .cancelOnDisappear(true)
                 .resizable()
-                .frame(width: 256, height: 256)
+                .frame(width: 256, height: 256, alignment: .leading)
+                .padding()
             Text(self.viewModel.presenter?.title ?? "")
+                .bold()
+                .frame(alignment: .center)
+                .font(.headline)
+                .padding()
             Text(self.viewModel.presenter?.detail ?? "")
+                .frame(alignment: .center).padding()
+                .font(.body)
+                .padding()
+            Text(self.viewModel.presenter?.date ?? "")
+                .frame(alignment: .center)
+                .font(.body)
+                .padding()
         }
     }
 }

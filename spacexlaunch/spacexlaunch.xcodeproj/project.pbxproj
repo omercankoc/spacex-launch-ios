@@ -28,6 +28,7 @@
 		6AE15FC0282B1FBF004EAE69 /* LaunchesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE15FBF282B1FBF004EAE69 /* LaunchesDetailViewModel.swift */; };
 		6AE15FC2282B2038004EAE69 /* LaunchesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE15FC1282B2038004EAE69 /* LaunchesDetailPresenter.swift */; };
 		6AE15FC6282B248F004EAE69 /* LaunchesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE15FC5282B248F004EAE69 /* LaunchesDetailView.swift */; };
+		EB4B314B522FC319F62B36F1 /* Pods_spacexlaunch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740142557D7EF3A98DE98928 /* Pods_spacexlaunch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,9 @@
 		6AE15FBF282B1FBF004EAE69 /* LaunchesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDetailViewModel.swift; sourceTree = "<group>"; };
 		6AE15FC1282B2038004EAE69 /* LaunchesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDetailPresenter.swift; sourceTree = "<group>"; };
 		6AE15FC5282B248F004EAE69 /* LaunchesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDetailView.swift; sourceTree = "<group>"; };
+		740142557D7EF3A98DE98928 /* Pods_spacexlaunch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spacexlaunch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B4A5D14396CC3796D7698C /* Pods-spacexlaunch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spacexlaunch.release.xcconfig"; path = "Target Support Files/Pods-spacexlaunch/Pods-spacexlaunch.release.xcconfig"; sourceTree = "<group>"; };
+		9EA6C41933259D02E93A236A /* Pods-spacexlaunch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spacexlaunch.debug.xcconfig"; path = "Target Support Files/Pods-spacexlaunch/Pods-spacexlaunch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +65,30 @@
 			files = (
 				6AE15FBB282B00AB004EAE69 /* Kingfisher in Frameworks */,
 				6AB5B0FC2829510700C6E0DD /* Alamofire in Frameworks */,
+				EB4B314B522FC319F62B36F1 /* Pods_spacexlaunch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA56F7143D3F28707E5C025 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EA6C41933259D02E93A236A /* Pods-spacexlaunch.debug.xcconfig */,
+				83B4A5D14396CC3796D7698C /* Pods-spacexlaunch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6AB5B0E02829503600C6E0DD = {
 			isa = PBXGroup;
 			children = (
 				6AB5B0EB2829503600C6E0DD /* spacexlaunch */,
 				6AB5B0EA2829503600C6E0DD /* Products */,
+				3BA56F7143D3F28707E5C025 /* Pods */,
+				D157E0F353248CF3EF68973B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +183,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		D157E0F353248CF3EF68973B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740142557D7EF3A98DE98928 /* Pods_spacexlaunch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AB5B0F72829503900C6E0DD /* Build configuration list for PBXNativeTarget "spacexlaunch" */;
 			buildPhases = (
+				D02E89ABF2FCABFFD1A46FF5 /* [CP] Check Pods Manifest.lock */,
 				6AB5B0E52829503600C6E0DD /* Sources */,
 				6AB5B0E62829503600C6E0DD /* Frameworks */,
 				6AB5B0E72829503600C6E0DD /* Resources */,
+				9BAB75C3F7CBEA722BEC93DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,8 +242,8 @@
 			);
 			mainGroup = 6AB5B0E02829503600C6E0DD;
 			packageReferences = (
-				6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
 			);
 			productRefGroup = 6AB5B0EA2829503600C6E0DD /* Products */;
 			projectDirPath = "";
@@ -238,6 +265,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BAB75C3F7CBEA722BEC93DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spacexlaunch/Pods-spacexlaunch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spacexlaunch/Pods-spacexlaunch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spacexlaunch/Pods-spacexlaunch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D02E89ABF2FCABFFD1A46FF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spacexlaunch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AB5B0E52829503600C6E0DD /* Sources */ = {
@@ -383,6 +452,7 @@
 		};
 		6AB5B0F82829503900C6E0DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA6C41933259D02E93A236A /* Pods-spacexlaunch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,6 +483,7 @@
 		};
 		6AB5B0F92829503900C6E0DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B4A5D14396CC3796D7698C /* Pods-spacexlaunch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,7 +536,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -473,7 +544,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -486,12 +557,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		6AB5B0FB2829510700C6E0DD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 		6AE15FBA282B00AB004EAE69 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

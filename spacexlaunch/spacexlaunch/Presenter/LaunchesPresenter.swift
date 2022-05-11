@@ -12,7 +12,7 @@ struct LaunchesPresenter : Identifiable {
         
         if let date = model.date {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-mm-dd"
+            dateFormatter.dateFormat = "dd.mm.yyyy"
             self.date = dateFormatter.string(from: date)
         } else {
             self.date = ""

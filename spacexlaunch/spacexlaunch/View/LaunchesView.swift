@@ -7,13 +7,17 @@ struct LaunchesView: View {
     
     var body: some View {
         VStack {
+            /* TabView {
+                ForEach(0..<3){ num in
+                    Image("\(num)")
+                        .resizable()
+                        .scaledToFit()
+                        .tag(num)
+                }
+            }.tabViewStyle(PageTabViewStyle())
+                .padding()
+            .frame(height: 200) */
             
-            List(self.upcomingViewModel.presenters) { item in
-                LaunchesUpcomingView(presenter: item)
-            }.onAppear(perform: {
-                self.upcomingViewModel.onAppear()
-            })
-
             NavigationView {
                 ZStack {
                     List(self.viewModel.presenters) { item in

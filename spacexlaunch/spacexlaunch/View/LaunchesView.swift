@@ -7,14 +7,14 @@ struct LaunchesView: View {
     
     var body: some View {
         VStack {
-            /* TabView {
-                ForEach(0..<3){ num in
+             /*TabView {
+                ForEach(0..<5){ num in
                     Image("\(num)")
                         .resizable()
                         .scaledToFit()
                         .tag(num)
                 }
-            }.tabViewStyle(PageTabViewStyle())
+             }.tabViewStyle(PageTabViewStyle())
                 .padding()
             .frame(height: 200) */
             

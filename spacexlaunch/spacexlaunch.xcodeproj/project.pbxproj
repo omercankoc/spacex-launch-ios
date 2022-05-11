@@ -215,8 +215,8 @@
 			);
 			mainGroup = 6AB5B0E02829503600C6E0DD;
 			packageReferences = (
-				6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 6AB5B0EA2829503600C6E0DD /* Products */;
 			projectDirPath = "";
@@ -393,6 +393,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spacexlaunch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space Launcher";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,6 +424,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spacexlaunch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space Launcher";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,7 +467,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -473,7 +475,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -486,12 +488,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		6AB5B0FB2829510700C6E0DD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 6AB5B0FA2829510700C6E0DD /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		6AE15FBA282B00AB004EAE69 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 6AE15FB9282B00AB004EAE69 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

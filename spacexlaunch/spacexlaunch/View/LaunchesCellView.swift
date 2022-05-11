@@ -10,7 +10,7 @@ struct LaunchesCellView: View {
     }
     
     var body: some View {
-        HStack(alignment: .top, spacing: 16){
+        HStack(alignment: .center, spacing: 16){
             KFImage(URL(string: self.presenter.image))
                 .cancelOnDisappear(true)
                 .resizable()
